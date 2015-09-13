@@ -9,6 +9,9 @@ class Point(object):
          self.y = b
 
 class Solution(object):
+    """
+    It takes 76ms for this solution.
+    """
     def maxPoints(self, points):
         from collections import defaultdict
 
@@ -37,7 +40,11 @@ class Solution(object):
             m = max(m, max(d.values()) + dup_count)
         return m
 
+
 class SlowSolution(object):
+    """
+    My 1st trial on this problem, it took 128 ms to complete all the test cases.
+    """
     def maxPoints(self, points):
         """
         :type points: List[Point]
